@@ -27,6 +27,9 @@ export function archiveStorageUrl(path) {
 export function eventToIntervalString(e) {
     const start = new Date(e.date)
     const end = addDays(start, (e.days - 1) || 0)
+    if (!e.days || e.days === 1) {
+        return `${start.toLocaleDateString('en-US', { month: 'long', day: 'numeric' })}, ${start.getFullYear()}`
+    }
     if (start.getMonth() === end.getMonth()) {
         return `${start.toLocaleDateString('en-US', { month: 'long', day: 'numeric' })}-${end.getDate()}, ${start.getFullYear()}`
     }
