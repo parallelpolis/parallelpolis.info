@@ -44,7 +44,7 @@
     {description}
     url="https://{config.host}/v/{item.id}"
     img={imgHashUrl("archive", item.imgHash, "m")}
-    video={item.storage ? archiveStorageUrl(item.storage.source.path) : NULL}
+    video={item.storage ? archiveStorageUrl(item.storage.source.path) : false}
 />
     
 <div class="w-full" style="">
