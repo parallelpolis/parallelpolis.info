@@ -21,7 +21,7 @@ export function imgSourceUrl(type, path) {
 }
 
 export function archiveStorageUrl(path) {
-    return `https://archive.pp0.co/${path}`
+    return `https://archive.pp0.co${path}`
 }
 
 export function eventToIntervalString(e) {

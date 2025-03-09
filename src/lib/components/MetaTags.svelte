@@ -1,7 +1,7 @@
 
 <script>
     import { config } from "$lib/data.js";
-    let { title, description, url, img } = $props();
+    let { title, description, url, img, video } = $props();
     let trimmedTitle = $derived(title.trim());
 
     console.log('x', trimmedTitle);
@@ -22,6 +22,9 @@
     {/if}
     {#if img}
         <meta property="og:image" content={img} />
+    {/if}
+    {#if video}
+        <meta property="og:video" content={video} />
     {/if}
 
 </svelte:head>
