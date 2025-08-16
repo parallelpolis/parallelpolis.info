@@ -175,12 +175,6 @@
                                         .nostr}">Nostr</a
                                 >
                             {/if}
-                            {#if config.refs.twitter}
-                            <a
-                                href="https://x.com/{config.refs
-                                    .twitter}">X/Twitter</a
-                            >
-                            {/if}
                             {#if config.refs.github}
                                 <a
                                     href="https://github.com/{config.refs

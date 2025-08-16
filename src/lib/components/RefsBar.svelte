@@ -47,14 +47,6 @@
                 </a>
             </div>
         {/if}
-        {#if refs.twitter}
-            <div class="flex gap-2 items-center">
-                <div class="text-2xl">𝕏</div>
-                <a href="https://x.com/{refs.twitter}" class="hover:underline"
-                    >{refs.twitter}
-                </a>
-            </div>
-        {/if}
         {#if refs.nostr}
             <div class="flex gap-2 items-center">
                 <div class="text-2xl">
